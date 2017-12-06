@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8"/>
+    <title>HTML中用JS调用OC方法</title>
+    <script>
+        function getInfo(name)
+        {
+            window.location = "/getInfo/"+name;
+
+        }
+
+        function postStr(name){
+            return "I am script"+name;
+        }
+    </script>
+</head>
+<body>
+    <h1 onclick="getInfo('openMyAlbum')" style="color:blue; text-align:center ; margin-top: 100px; margin-left:0px;margin-right:0px" >打开相册</h1>
+<br>
+<h1 onclick="getInfo('openMyCamera')" style="color:blue; text-align:center ; margin-top: 10px; margin-left:0px;margin-right:0px">打开相机</h1>
+</body>
+</html>
