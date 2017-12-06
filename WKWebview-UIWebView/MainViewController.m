@@ -25,7 +25,7 @@
     // 设置选中字体样式，注意不要用上面的字典了,不同state下的属性要用不同的字典来装
     NSMutableDictionary *attrSelected = [[NSMutableDictionary alloc]init];
     attrSelected[NSFontAttributeName] = attr[NSFontAttributeName];
-    attrSelected[NSForegroundColorAttributeName] = [UIColor redColor];
+    attrSelected[NSForegroundColorAttributeName] = [UIColor colorWithRed:214/255.0 green:34/255.0 blue:25/255.0 alpha:1.0];
     [item setTitleTextAttributes:attrSelected forState:UIControlStateSelected];
     // Do any additional setup after loading the view.
 }
